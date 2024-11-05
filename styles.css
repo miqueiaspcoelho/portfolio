@@ -8,9 +8,14 @@
 	--color6:#fff;
 }
 
-
+main{
+	height: 80vh;
+}
 #footer_content{
 	background-color: var(--color1);
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 #footer_social_media{
@@ -19,4 +24,33 @@
 	justify-content: center;
 	display: flex;
 	gap: 15px;
+}
+
+#footer_social_media .footer_link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: var(--color6);
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+#footer_social_media .footer_link:hover{
+	opacity: 0.8;
+	scale: 1.1;
+	transition: 0.5s;
+}
+
+#instagram{
+	background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+}
+
+#linkedin{
+	background-color: #0e76a8;
+}
+
+#github{
+	background-color: #808080;
 }
