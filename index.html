@@ -44,7 +44,7 @@
 		<h1>Hello, World!</h1>
     </main>
 
-    <footer class="text-center">
+    <footer>
         <!-- Rodapé da página -->
 		<div id="footer_content">
 			<div id="footer_contacts">
@@ -70,14 +70,16 @@
 			<div id="footer_email">
 				<h2>Contato por Email</h2>
 				<p>Digite seu email</p>
-				<div id="input_group">
-					<form>
+				<form>
+					<div id="input_group">
+					
 						<input type="email" id="email_icon" placeholder="Digite seu email" required/>
-						<button>
+						<button type="submit" id="email_submit_button">
 							<i class="fa-regular fa-envelope"></i>
 						</button>
-					</form>
-				</div>
+					
+					</div>
+				</form>
 			</div>
 		</div>
 		

@@ -7,21 +7,27 @@
 	-color5:#2e97b7;
 	--color6:#fff;
 }
-
+*{
+	margin:0;
+	padding:0;
+}
 main{
 	height: 80vh;
 }
 #footer_content{
-	background-color: var(--color1);
-	padding: 10px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-#footer_social_media{
 	align-content: center;
 	align-items:center;
 	justify-content: center;
+	background-color: var(--color1);
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+#footer_social_media{
+	
 	display: flex;
 	gap: 15px;
 }
@@ -53,4 +59,20 @@ main{
 
 #github{
 	background-color: #808080;
+}
+
+#input_group{
+	display: flex;
+	align-items: center;
+	background: var(--color4);
+	border-radius: 4px;
+	
+}
+#input_group input{
+	width: 100%;
+	padding: 0.1rem;
+	all: unset;
+}
+#email_submit_button{
+	height:100%;
 }
