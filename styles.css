@@ -1,7 +1,22 @@
-.bt1 {
-	background-color: ##0e76a8;
+/*paleta de cores do projeto*/
+:root {
+	--color1:#fdf4b0;
+	--color2:#a4dcb9;
+	--color3:#5bcebf;
+	--color4:#32b9be;
+	-color5:#2e97b7;
+	--color6:#fff;
 }
 
-.bt2{
-	background-color: #E1306C;
+
+#footer_content{
+	background-color: var(--color1);
+}
+
+#footer_social_media{
+	align-content: center;
+	align-items:center;
+	justify-content: center;
+	display: flex;
+	gap: 15px;
 }
