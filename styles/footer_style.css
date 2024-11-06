@@ -77,12 +77,13 @@
 	padding-bottom: 0.23rem;
 	padding-left: 0.50rem;
 	padding-right: 0.50rem;
+	margin-left: 0.23rem;
 	border: 1px solid transparent;
 	border-top-right-radius: 0.25rem;
 	border-bottom-right-radius: 0.25rem;
 }
 
 #email_submit_button:hover{
-	opacity: 0.8;
-	transition: 0.5s;
+	transition: 0.7s;
+	background: var(--color2);
 }
