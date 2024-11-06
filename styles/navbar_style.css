@@ -1,0 +1,42 @@
+/*paleta de cores do projeto*/
+:root {
+	--color1:#fdf4b0;
+	--color2:#a4dcb9;
+	--color3:#5bcebf;
+	--color4:#32b9be;
+	--color5:#2e97b7;
+	--color6:#fff;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+header{
+	background: var(--color4);
+	box-shadow: 0px 3px 7px var(--color5);
+}
+
+.nav-bar{
+	display: flex;
+	justify-content: center;
+}
+
+.nav-list{
+	display: flex;
+	align-items:center;
+}
+
+.nav-list ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+.nav-item{
+	margin: 10px;
+}
+.nav-link a{
+	font-weight: bold;
+	font-size: 100px;
+}
