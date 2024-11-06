@@ -18,7 +18,6 @@
 }
 
 
-
 #footer_social_media{
 	
 	display: flex;
@@ -57,15 +56,33 @@
 #input_group{
 	display: flex;
 	align-items: center;
-	background: var(--color4);
+	justify-content: space-between;
+	background: var(--color6);
 	border-radius: 4px;
+	padding-left: 0.5rem;
+	width: 100%;
 	
 }
 #input_group input{
 	width: 100%;
-	padding: 0.1rem;
-	all: unset;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	background: none;
+	border: none;
 }
 #email_submit_button{
 	height:100%;
+	background: var(--color4);
+	padding-top: 0.23rem;
+	padding-bottom: 0.23rem;
+	padding-left: 0.50rem;
+	padding-right: 0.50rem;
+	border: 1px solid transparent;
+	border-top-right-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+}
+
+#email_submit_button:hover{
+	opacity: 0.8;
+	transition: 0.5s;
 }
