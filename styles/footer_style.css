@@ -1,0 +1,71 @@
+/*paleta de cores do projeto*/
+:root {
+	--color1:#fdf4b0;
+	--color2:#a4dcb9;
+	--color3:#5bcebf;
+	--color4:#32b9be;
+	-color5:#2e97b7;
+	--color6:#fff;
+}
+#footer_content{
+	align-content: center;
+	align-items:center;
+	justify-content: center;
+	background-color: var(--color1);
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+#footer_social_media{
+	
+	display: flex;
+	gap: 15px;
+}
+
+#footer_social_media .footer_link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: var(--color6);
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+#footer_social_media .footer_link:hover{
+	opacity: 0.8;
+	scale: 1.1;
+	transition: 0.5s;
+}
+
+#instagram{
+	background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+}
+
+#linkedin{
+	background-color: #0e76a8;
+}
+
+#github{
+	background-color: #808080;
+}
+
+#input_group{
+	display: flex;
+	align-items: center;
+	background: var(--color4);
+	border-radius: 4px;
+	
+}
+#input_group input{
+	width: 100%;
+	padding: 0.1rem;
+	all: unset;
+}
+#email_submit_button{
+	height:100%;
+}
