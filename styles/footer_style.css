@@ -87,3 +87,11 @@
 	transition: 0.7s;
 	background: var(--color2);
 }
+
+#footer_copyright{
+	font-weight: bold;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+	background: linear-gradient(var(--color4), var(--color2));
+}
