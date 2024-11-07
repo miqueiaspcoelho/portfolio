@@ -1,0 +1,26 @@
+*paleta de cores do projeto*/
+:root {
+	--color1:#fdf4b0;
+	--color2:#a4dcb9;
+	--color3:#5bcebf;
+	--color4:#32b9be;
+	--color5:#2e97b7;
+	--color6:#fff;
+	--size: 16rem;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: system-ui;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+	text-align: center;
+}
