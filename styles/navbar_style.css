@@ -12,6 +12,10 @@
 	margin:0;
 	padding:0;
 }
+html{
+	scroll-behavior: smooth;
+}
+
 
 header{
 	background: var(--color4);
@@ -34,9 +38,13 @@ header{
 	display: flex;
 	align-items: center;
 	list-style: none;
+	
+	
 }
 .nav-item{
 	margin-right: 2rem;
+	margin-left: 2rem;
+
 }
 .nav-link {
 	font-weight: bold;
@@ -50,7 +58,7 @@ header{
 @media screen and (max-width: 768px){
 	.nav-link {
 		font-weight: bold;
-		font-size: 0.9rem;
+		font-size: 0.75rem;
 		text-decoration: none;
 		color: var(--color6);
 	}
