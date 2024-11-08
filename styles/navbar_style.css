@@ -38,13 +38,13 @@ header{
 	display: flex;
 	align-items: center;
 	list-style: none;
-	
+	justify-content: space-around;
 	
 }
 .nav-item{
-	margin-right: 2rem;
-	margin-left: 2rem;
-
+	padding: 0 0.75rem;
+	justify-content: center;
+	align-items: center;
 }
 .nav-link {
 	font-weight: bold;
@@ -62,8 +62,6 @@ header{
 		text-decoration: none;
 		color: var(--color6);
 	}
-	.nav-item{
-		margin-right: 0.75rem;
-	}
+	
 }
 	
