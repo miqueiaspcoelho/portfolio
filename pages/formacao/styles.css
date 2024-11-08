@@ -1,4 +1,4 @@
-*paleta de cores do projeto*/
+/*paleta de cores do projeto*/
 :root {
 	--color1:#fdf4b0;
 	--color2:#a4dcb9;
@@ -13,6 +13,7 @@ html, body{
 	margin: 0;
 	padding: 0;
 	font-family: system-ui;
+	height: 100%;
 }
 
 body{
@@ -23,4 +24,70 @@ body{
 main{
 	flex: 1 0 auto;
 	text-align: center;
+}
+
+#container_infos_time_line{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: center;
+	align-items: baseline;
+	justify-items: center;
+	padding: 0.5rem 3rem;
+	
+}
+
+#formation{
+	width: 90%;
+	margin: 1rem;
+}
+
+#job_experience{
+	width: 90%;
+	margin: 2rem;
+}
+.title{
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	color: var(--color6);
+}
+
+.content_box_information{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0.25rem;
+	text-align: start;
+	border-left: 3px solid var(--color2);
+}
+
+.box-information{
+	margin-bottom: 1rem;
+	position: relative;
+	padding: 1rem;
+}
+.box-information:hover{
+	background: var(--color2);
+	opacity: 0.6;
+	box-shadow: 1px 2px 5px var(--color3);
+	scale: 0.95;
+	transform: translate(1rem, -0.3rem);
+}
+.bold{
+	font-weight: bold;
+}
+#container_infos_time_line .content_box_information .box-information::before{
+	content: '';
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	right: 100%;
+	top: 10;
+	background-color: var(--color5);
+	border: 1px solid var(--color6);
+}
+
+@media screen and (max-width: 768px) {
+	#container_infos_time_line{
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
