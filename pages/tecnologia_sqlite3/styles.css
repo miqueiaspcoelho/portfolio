@@ -1,0 +1,96 @@
+/*paleta de cores do projeto*/
+:root {
+	--color1:#fdf4b0;
+	--color2:#a4dcb9;
+	--color3:#5bcebf;
+	--color4:#32b9be;
+	--color5:#2e97b7;
+	--color6:#fff;
+	--size: 16rem;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: system-ui;
+	height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+	text-align: center;
+}
+
+#container_infos{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: center;
+}
+#row1{
+	height: 100%;
+	
+	padding-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+#row1 p{
+	font-family: 'Pirata One', 'Comic Sans MS';
+	font-size: 1.3rem;
+}
+.bold{
+	font-family: 'Pirata One', 'Comic Sans MS';
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+#row1 img{
+	width: var(--size);
+    height: var(--size);;
+	border-radius: 100%;
+	transition: linear 0.7s;
+    object-fit: cover;
+}
+#row1 img:hover{
+	border-radius: 10%;
+	transition: linear 0.7s;
+	cursor: pointer;
+}
+
+.definition-text{
+    font-size: 1rem;
+    text-align: justify;
+  	font-style: italic;
+    padding: 1rem;
+}
+.topic-text{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+#row2{
+	height: 100%;
+	padding-top: 1.5rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	text-align: justify;
+  	font-style: italic;
+	margin-bottom: 1rem;
+}
+.separator {
+	height: 7px;
+	width: 90%;
+	border: 1px transparent var(--color1);
+	background-color: var(--color1);
+  }
+
+  @media screen and (max-width: 768px){
+	#container_infos{
+		grid-template-columns: repeat(1, 1.5fr);
+	}
+	main{
+		font-size: 0.75rem;
+	}
+}

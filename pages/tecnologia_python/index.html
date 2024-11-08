@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Se tiver um arquivo CSS externo -->
+    <link rel="stylesheet" href="../../styles/footer_style.css"><!-- Adiciona o estilo ao footer-->
+	<link rel="stylesheet" href="../../styles/navbar_style.css"><!-- Adiciona o estilo ao menu(navbar)-->	
+	<link rel="stylesheet" href="../../assets/css/all.min.css"> <!-- Para utilizar fontawesome offiline -->
+	<link rel="stylesheet" href="../../assets/css/fontawesome.min.css"> <!-- Para utilizar fontawesome offiline -->
+</head>
+<body>
+	<!-- Cabeçalho da página -->
+    <header>
+		<!-- Navegação da página -->
+		<nav class="nav-bar">
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+					<li class="nav-item"><a href="#footer_contacts" class="nav-link">Contato</a></li>
+					<li class="nav-item"><a href="../portfolio/index.html" class="nav-link">Portifólio</a></li>
+					<li class="nav-item"><a href="../formacao/index.html" class="nav-link">Formação</a></li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+
+	
+
+    <main>
+        <!-- Conteúdo principal da página -->
+		<h1>Tecnologia</h1>
+		<article id="container_infos">
+			<div id="row1">
+				<a href="https://www.python.org" target="_blank"><img src="../../assets/python.png" alt="simbolo da linguagem python"></a>
+				<p><span class="bold">Nome:</span> Python</p>
+				<div class="separator"></div>
+				<p><span class="bold">Aniversário:</span> 1991 por Guido van Rossum</p>
+				<p><span class="bold">Site Oficial:</span> <a href="https://www.python.org" target="_blank">https://www.python.org</a></p>
+				<div class="definition-text">
+                    Python é uma linguagem de programação de alto nível, de propósito geral, 
+                    fácil de aprender e muito popular no desenvolvimento de aplicativos web, 
+                    automação, análise de dados, inteligência artificial, entre outros. 
+                    É uma linguagem interpretada, dinâmica e orientada a objetos, com forte ênfase
+                    na legibilidade do código e na simplicidade. 
+                    Sua sintaxe clara e concisa permite que os desenvolvedores 
+                    se concentrem mais na solução dos problemas do que nos detalhes de implementação.
+                    Python suporta múltiplos paradigmas de programação, como programação orientada a objetos,
+                    funcional e imperativa, o que o torna uma linguagem extremamente flexível. 
+                    Além disso, Python possui um vasto ecossistema de bibliotecas e 
+                    frameworks que o tornam adequado para uma ampla gama de tarefas, 
+                    desde desenvolvimento web até análise de dados e aprendizado de máquina.
+				</div>
+				
+				
+
+			</div>
+			<div id="row2">
+				<div class="separator"></div>
+				
+				<h2 class="topic-text">Prós</h2>
+				<ol>
+					<li>Sintaxe Simples e Legível</li>
+					<li>Grande Ecossistema de Bibliotecas e Frameworks</li>
+					<li>Versatilidade e Portabilidade</li>
+				</ol>
+				<h2 class="topic-text">Limitações</h2>
+				<ol>
+					<li>Desempenho</li>
+					<li>Consumo de Memória</li>
+				</ol>
+
+				<h2 class="topic-text">Grandes Projetos que fazem uso da tecnologia</h2>
+				<ol>
+					<li>Instagram</li>
+					<li>YouTube</li>
+					<li>Spotify</li>
+					<li>Dropbox</li>
+				</ol>
+
+			</div>
+		</article>
+		
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+		<div id="footer_content">
+			<div id="footer_contacts">
+				<h2>Redes Sociais</h1>
+				<p>Vamos trocar uma ideia! É só me seguir ou mandar uma dm</p>
+				<div id="footer_social_media">
+					<a href="https://www.linkedin.com/in/miqu%C3%A9ias-pereira-coelho-8a0071218/" target="_blank" class="footer_link" id="linkedin">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+					
+					<a href="https://www.instagram.com/mi.queias/" target="_blank" class="footer_link" id="instagram">
+						<i class="fa-brands fa-instagram"></i>
+						
+					</a>
+					
+					<a href="https://github.com/miqueiaspcoelho" target="_blank" class="footer_link" id="github">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					
+				</div>
+			</div>
+			<div id="footer_email">
+				<h2>Contato por Email</h2>
+				<p>Adicione seu email e agende uma consultória tecnológica</p>
+				<form>
+					<div id="input_group">
+					
+						<input type="email" id="email_icon" placeholder="Digite seu email" required/>
+						<button type="submit" id="email_submit_button">
+							<i class="fa-regular fa-envelope fa-2xl"></i>
+						</button>
+					
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div id="footer_copyright">
+			&#169
+			2024 all rights reserved
+		</div>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Se tiver um arquivo CSS externo -->
+    <link rel="stylesheet" href="../../styles/footer_style.css"><!-- Adiciona o estilo ao footer-->
+	<link rel="stylesheet" href="../../styles/navbar_style.css"><!-- Adiciona o estilo ao menu(navbar)-->	
+	<link rel="stylesheet" href="../../assets/css/all.min.css"> <!-- Para utilizar fontawesome offiline -->
+	<link rel="stylesheet" href="../../assets/css/fontawesome.min.css"> <!-- Para utilizar fontawesome offiline -->
+</head>
+<body>
+	<!-- Cabeçalho da página -->
+    <header>
+		<!-- Navegação da página -->
+		<nav class="nav-bar">
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+					<li class="nav-item"><a href="#footer_contacts" class="nav-link">Contato</a></li>
+					<li class="nav-item"><a href="../portfolio/index.html" class="nav-link">Portifólio</a></li>
+					<li class="nav-item"><a href="../formacao/index.html" class="nav-link">Formação</a></li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+
+	
+
+    <main>
+        <!-- Conteúdo principal da página -->
+		<h1>Tecnologia</h1>
+		<article id="container_infos">
+			<div id="row1">
+				<a href=" https://www.java.com/pt-BR/" target="_blank"><img src="../../assets/java.png" alt="simbolo da linguagem java - xícara de café quente"></a>
+				<p><span class="bold">Nome:</span> Java</p>
+				<div class="separator"></div>
+				<p><span class="bold">Aniversário:</span> 1995</p>
+				<p><span class="bold">Site Oficial:</span> <a href="https://www.java.com/pt-BR/" target="_blank">https://www.java.com/pt-BR/</a></p>
+				<div class="definition-text">
+				Java é uma linguagem de programação orientada a objetos, de propósito geral, 
+				que segue o princípio "Write Once, Run Anywhere" (Escreva uma vez, execute em qualquer lugar), 
+				significando que o código Java pode ser executado em qualquer dispositivo ou sistema operacional, 
+				desde que tenha a Máquina Virtual Java (JVM) instalada. 
+				Essa característica se deve à separação entre a linguagem Java e a plataforma subjacente, 
+				permitindo que o código seja compilado em bytecode que é interpretado pela JVM. 
+				Java é amplamente usado para o desenvolvimento de aplicativos web, móveis (especialmente Android), 
+				sistemas corporativos, e muito mais, devido à sua robustez, segurança e portabilidade.
+				</div>
+				
+				
+
+			</div>
+			<div id="row2">
+				<div class="separator"></div>
+				
+				<h2 class="topic-text">Prós</h2>
+				<ol>
+					<li>Portabilidade</li>
+					<li>Ampla Documentação e Comunidade</li>
+					<li>Desempenho e Escalabilidade</li>
+				</ol>
+				<h2 class="topic-text">Limitações</h2>
+				<ol>
+					<li>Desempenho Inferior ao Código Nativo</li>
+					<li>Consumo de Memória</li>
+					<li>Sintaxe Verbosa</li>
+				</ol>
+
+				<h2 class="topic-text">Grandes Projetos que fazem uso da tecnologia</h2>
+				<ol>
+					<li>Apache Hadoop</li>
+					<li>Eclipse</li>
+					<li>Android</li>
+					<li>LinkedIn</li>
+				</ol>
+
+			</div>
+		</article>
+		
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+		<div id="footer_content">
+			<div id="footer_contacts">
+				<h2>Redes Sociais</h1>
+				<p>Vamos trocar uma ideia! É só me seguir ou mandar uma dm</p>
+				<div id="footer_social_media">
+					<a href="https://www.linkedin.com/in/miqu%C3%A9ias-pereira-coelho-8a0071218/" target="_blank" class="footer_link" id="linkedin">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+					
+					<a href="https://www.instagram.com/mi.queias/" target="_blank" class="footer_link" id="instagram">
+						<i class="fa-brands fa-instagram"></i>
+						
+					</a>
+					
+					<a href="https://github.com/miqueiaspcoelho" target="_blank" class="footer_link" id="github">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					
+				</div>
+			</div>
+			<div id="footer_email">
+				<h2>Contato por Email</h2>
+				<p>Adicione seu email e agende uma consultória tecnológica</p>
+				<form>
+					<div id="input_group">
+					
+						<input type="email" id="email_icon" placeholder="Digite seu email" required/>
+						<button type="submit" id="email_submit_button">
+							<i class="fa-regular fa-envelope fa-2xl"></i>
+						</button>
+					
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div id="footer_copyright">
+			&#169
+			2024 all rights reserved
+		</div>
+    </footer>
+
+    
+</body>
+</html>

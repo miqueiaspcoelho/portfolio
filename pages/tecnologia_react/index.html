@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Se tiver um arquivo CSS externo -->
+    <link rel="stylesheet" href="../../styles/footer_style.css"><!-- Adiciona o estilo ao footer-->
+	<link rel="stylesheet" href="../../styles/navbar_style.css"><!-- Adiciona o estilo ao menu(navbar)-->	
+	<link rel="stylesheet" href="../../assets/css/all.min.css"> <!-- Para utilizar fontawesome offiline -->
+	<link rel="stylesheet" href="../../assets/css/fontawesome.min.css"> <!-- Para utilizar fontawesome offiline -->
+</head>
+<body>
+	<!-- Cabeçalho da página -->
+    <header>
+		<!-- Navegação da página -->
+		<nav class="nav-bar">
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+					<li class="nav-item"><a href="#footer_contacts" class="nav-link">Contato</a></li>
+					<li class="nav-item"><a href="../portfolio/index.html" class="nav-link">Portfólio</a></li>
+					<li class="nav-item"><a href="../formacao/index.html" class="nav-link">Formação</a></li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+
+	
+
+    <main>
+        <!-- Conteúdo principal da página -->
+		<h1>Tecnologia</h1>
+		<article id="container_infos">
+			<div id="row1">
+				<a href="https://reactjs.org" target="_blank"><img src="../../assets/react.png" alt="simbolo da linguagem react"></a>
+				<p><span class="bold">Nome:</span>React</p>
+				<div class="separator"></div>
+				<p><span class="bold">Aniversário:</span>  2013 pela equipe de desenvolvimento do Facebook</p>
+				<p><span class="bold">Site Oficial:</span> <a href="https://reactjs.org" target="_blank">https://reactjs.org</a></p>
+				<div class="definition-text">
+                    React é uma biblioteca JavaScript de código aberto para a construção de interfaces 
+                    de usuário (UI), especialmente para aplicações web de página única (SPA - Single Page Applications). 
+                    Ele permite que os desenvolvedores criem interfaces de usuário reativas, 
+                    com componentes que podem ser reutilizados, facilitando o desenvolvimento e a 
+                    manutenção de interfaces dinâmicas e interativas.
+                    React trabalha com um conceito chamado DOM Virtual, que otimiza a atualização da interface, 
+                    permitindo que apenas as partes modificadas da UI sejam renderizadas novamente, 
+                    em vez de atualizar a página inteira. Isso melhora significativamente o desempenho das aplicações.
+                    React é frequentemente usado para construir aplicações front-end, mas 
+                    também pode ser usado no desenvolvimento mobile com o framework React Native, 
+                    permitindo a criação de aplicativos nativos para iOS e Android com a mesma base de código.
+				</div>
+				
+				
+
+			</div>
+			<div id="row2">
+				<div class="separator"></div>
+				
+				<h2 class="topic-text">Prós</h2>
+				<ol>
+					<li>Reutilização de Componentes</li>
+					<li>Desempenho com Virtual DOM</li>
+					<li>Ecosistema e Ferramentas de Desenvolvimento</li>
+				</ol>
+				<h2 class="topic-text">Limitações</h2>
+				<ol>
+					<li>Curva de Aprendizado para Iniciantes</li>
+					<li>Complexidade com Grandes Aplicações</li>
+                    <li>Rendimentos de SEO (Search Engine Optimization)</li>
+				</ol>
+
+				<h2 class="topic-text">Grandes Projetos que fazem uso da tecnologia</h2>
+				<ol>
+					<li>Facebook</li>
+					<li>Instagram</li>
+					<li>Netflix</li>
+					<li>Airbnb</li>
+				</ol>
+
+			</div>
+		</article>
+		
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+		<div id="footer_content">
+			<div id="footer_contacts">
+				<h2>Redes Sociais</h1>
+				<p>Vamos trocar uma ideia! É só me seguir ou mandar uma dm</p>
+				<div id="footer_social_media">
+					<a href="https://www.linkedin.com/in/miqu%C3%A9ias-pereira-coelho-8a0071218/" target="_blank" class="footer_link" id="linkedin">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+					
+					<a href="https://www.instagram.com/mi.queias/" target="_blank" class="footer_link" id="instagram">
+						<i class="fa-brands fa-instagram"></i>
+						
+					</a>
+					
+					<a href="https://github.com/miqueiaspcoelho" target="_blank" class="footer_link" id="github">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					
+				</div>
+			</div>
+			<div id="footer_email">
+				<h2>Contato por Email</h2>
+				<p>Adicione seu email e agende uma consultória tecnológica</p>
+				<form>
+					<div id="input_group">
+					
+						<input type="email" id="email_icon" placeholder="Digite seu email" required/>
+						<button type="submit" id="email_submit_button">
+							<i class="fa-regular fa-envelope fa-2xl"></i>
+						</button>
+					
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div id="footer_copyright">
+			&#169
+			2024 all rights reserved
+		</div>
+    </footer>
+
+    
+</body>
+</html>
