@@ -62,6 +62,9 @@ header{
 		text-decoration: none;
 		color: var(--color6);
 	}
+	.nav-item{
+		padding: 0 0.3rem;
+	}
 	
 }
 	
