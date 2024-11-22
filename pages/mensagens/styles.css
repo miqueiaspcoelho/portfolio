@@ -97,6 +97,16 @@ main{
 	transition: 0.5s;
 }
 
+.button-delete{
+	height: 2rem;
+	width: 5rem;
+	
+}
+
+.button-delete:hover{
+	cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
 	#container_infos_time_line{
