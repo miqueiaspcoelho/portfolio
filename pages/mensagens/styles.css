@@ -60,17 +60,12 @@ main{
 }
 
 .box-information{
+	display: inline-block;
 	margin-bottom: 1rem;
 	position: relative;
 	padding: 1rem;
 }
-.box-information:hover{
-	background: var(--color2);
-	opacity: 0.6;
-	box-shadow: 1px 2px 5px var(--color3);
-	scale: 0.95;
-	transform: translate(1rem, -0.3rem);
-}
+
 .bold{
 	font-weight: bold;
 }
@@ -91,14 +86,18 @@ main{
 	border-radius: 5%;
 	padding: 1rem;
 	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: space-between;
 }
 
 .box-message:hover{
 	background: var(--color2);
 	opacity: 0.6;
 	box-shadow: 1px 2px 5px var(--color3);
-	scale: 0.95;
-	transform: translate(1rem, -0.3rem);
+	transition: 0.5s;
+}
+
+
 @media screen and (max-width: 768px) {
 	#container_infos_time_line{
 		grid-template-columns: repeat(1, 1fr);
