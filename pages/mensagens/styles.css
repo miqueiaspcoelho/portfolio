@@ -26,61 +26,81 @@ main{
 	text-align: center;
 }
 
-li{
-    list-style: none;
-}
-
-#container_infos_card{
+#container_infos_time_line{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	text-align: center;
-	align-items: center;
+	align-items: baseline;
 	justify-items: center;
-    justify-content: center;
+	padding: 0.5rem 3rem;
 	
-	
-}
-.card-container{
-    width: 20rem;
-    height: 22rem;
-    overflow: hidden;
-    border-radius: 5%;
-    border-left: 3px solid var(--color2);
-    box-shadow: 1px 2px 5px var(--color3);
-    margin-bottom: 1rem;
-}
-.card-container img{
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-}
-.card-container img:hover{
-    scale: 1.1;
-    transition: 0.7s;
 }
 
-#row1, #row2{
-	width: 100%;
+#formation{
+	width: 90%;
 	margin: 1rem;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
 }
 
+#job_experience{
+	width: 90%;
+	margin: 2rem;
+}
+.title{
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	color: var(--color6);
+}
 
-.card-content{
+.content_box_information{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0.25rem;
+	text-align: start;
+	border-left: 3px solid var(--color2);
+}
+
+.box-information{
 	margin-bottom: 1rem;
+	position: relative;
 	padding: 1rem;
-    overflow: hidden;
 }
-
-
+.box-information:hover{
+	background: var(--color2);
+	opacity: 0.6;
+	box-shadow: 1px 2px 5px var(--color3);
+	scale: 0.95;
+	transform: translate(1rem, -0.3rem);
+}
 .bold{
 	font-weight: bold;
 }
+#container_infos_time_line .content_box_information .box-information::before{
+	content: '';
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	right: 100%;
+	top: 10;
+	background-color: var(--color5);
+	border: 1px solid var(--color6);
+}
 
+.box-message{
+	border: 1px solid var(--color2);
+	border-radius: 5%;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.box-message:hover{
+	background: var(--color2);
+	opacity: 0.6;
+	box-shadow: 1px 2px 5px var(--color3);
+	scale: 0.95;
+	transform: translate(1rem, -0.3rem);
 @media screen and (max-width: 768px) {
-	#container_infos_card{
+	#container_infos_time_line{
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
