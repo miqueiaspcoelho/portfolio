@@ -1,115 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Adiciona estilo ao index -->
-	<link rel="stylesheet" href="styles/footer_style.css"><!-- Adiciona o estilo ao footer-->
-	<link rel="stylesheet" href="styles/navbar_style.css"><!-- Adiciona o estilo ao menu(navbar)-->	
-	<link rel="stylesheet" href="assets/css/all.min.css"> <!-- Para utilizar fontawesome offiline -->
-	<link rel="stylesheet" href="assets/css/fontawesome.min.css"> <!-- Para utilizar fontawesome offiline -->
-	<link href='https://fonts.googleapis.com/css?family=Pirata One' rel='stylesheet'> <!-- Fonte com estilo de pirata -->
-	<script src="/scripts/adiciona_mensagens.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miquéias Pereira | Computer Engineer Portfolio</title>
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono:wght@300;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<!-- Cabeçalho da página -->
-    <header>
-		<!-- Navegação da página -->
-		<nav class="nav-bar">
-			<div class="nav-list">
-				<ul>
-					<li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-					<li class="nav-item"><a href="#footer_contacts" class="nav-link">Contato</a></li>
-					<li class="nav-item"><a href="pages/portfolio/index.html" class="nav-link">Portfólio</a></li>
-					<li class="nav-item"><a href="pages/formacao/index.html" class="nav-link">Formação</a></li>
-					<li class="nav-item"><a href="pages/mensagens/index.html" class="nav-link">Mensagens</a></li>
-				</ul>
+
+<body class="dark-theme">
+
+	<header class="header">
+		<!-- <nav class="container nav-container">
+			<div class="logo">
+				<span class="code-bracket">&lt;</span>Micas<span class="code-bracket">/&gt;</span>
 			</div>
-		</nav>
-    </header>
+			<ul class="nav-links">
+				<li><a href="#home">Início</a></li>
+				<li><a href="#about">Sobre</a></li>
+				<li><a href="pages/portfolio/index.html">Projetos</a></li>
+				<li><a href="#contact">Contato</a></li>
+			</ul>
+		</nav> -->
+	</header>
+	<script src="js/components/navbar.js"></script>
 
-	
+	<main class="container">
 
-    <main>
-        <!-- Conteúdo principal da página -->
-		<h1>Olá, Mundo.  Hello, World.  Ola, Mundo.  Ciao, Mondo.</h1>
-		<article id="container_infos">
-			<div id="about_me">
-				<a href=" http://lattes.cnpq.br/7754548926484373" target="_blank"><img id="about_me_img" src="assets/about-me-img.jpeg" alt="foto de perfil de um homem sorrindo, jovem adulto"></a>
-				<p><span class="bold">Nome:</span> Miquéias Pereira Coelho</p>
-				<div class="separator"></div>
-				<p><span class="bold">Recompensa:</span> $ 1.000.000.000 berries</p>
-				<p><span class="bold">Nascimento:</span> abril de 1999</p>
-				<p><span class="bold">Hobbie:</span> Guitarrista</p>
-				<p><span class="bold">Esporte:</span> Futebol</p>
-				<p><span class="bold">Filme:</span> Futebol</p>
-				
-
-			</div>
-			<div id="apresentation">
-				<div class="separator"></div>
-				<h2>Seja muito bem vindo à minha página.</h2><br>
-				Para nós adquirirmos proximidade eu vou falar um pouco sobre mim. Eu Miquéias que também sou Micas, minha família
-				me chama assim, e que também sou Mick, meus amigos me chama assim, e que no útlimo dos casos sou o Melquias, algumas
-				pessoas não acertam falar meu nome e me chamam assim, e sim, eu sou todos esses caras.<br>
-				Sou original de São Luís do Maranhão, capital do Estado e também uma das cidades que formam a ilha onde moro. Famosa 
-				por suas praias, azulejos, centro histórico, tradições culturais e por ser conhecida como a ilha do amor.<br>
-				Nem só de programação vive esse que vos fala, pois, pratico esporte, faço academia, toco guitarra na igreja, 
-				costumo cantar no chuveiro e já fui até atleta de natação quando mais novo.<br>
-				Sou apaixonado e amante de inovação, tecnologia e conhecimento, estou sempre empenhado em aprender
-				algo novo.<br>
-				Senhoras e senhores, esse sou eu.
-			</div>
-		</article>
-		
-    </main>
-
-    <footer>
-        <!-- Rodapé da página -->
-		<div id="footer_content">
-			<div id="footer_contacts">
-				<h2>Redes Sociais</h1>
-				<p>Vamos trocar uma ideia! É só me seguir ou mandar uma dm</p>
-				<div id="footer_social_media">
-					<a href="https://www.linkedin.com/in/miqu%C3%A9ias-pereira-coelho-8a0071218/" target="_blank" class="footer_link" id="linkedin">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-					
-					<a href="https://www.instagram.com/mi.queias/" target="_blank" class="footer_link" id="instagram">
-						<i class="fa-brands fa-instagram"></i>
-						
-					</a>
-					
-					<a href="https://github.com/miqueiaspcoelho" target="_blank" class="footer_link" id="github">
-						<i class="fa-brands fa-github"></i>
-					</a>
-					
+		<section id="home" class="hero-section">
+			<div class="hero-text">
+				<p class="mono-text color-accent">// Olá, Mundo. Eu sou</p>
+				<h1>Miquéias Pereira</h1>
+				<h2 class="typing-text">
+					Bacharel em Ciência e Tecnologia <br> 
+					Engenheiro da Computação <br> 
+					Desenvolvedor de software
+				</h2>
+				<div class="hero-stats">
+					<div class="stat"><span class="bold">$ 1.0B</span> Berries</div>
+					<div class="stat"><span class="bold">MA</span> Brasil</div>
 				</div>
 			</div>
-			<div id="footer_email">
-				<h2>Contato por Email</h2>
-				<p>Adicione seu email e agende uma consultória tecnológica</p>
-				<form>
-					<div id="input_group">
-					
-						<input type="email" id="email_icon" placeholder="Digite seu email" required/>
-						<button type="submit" id="email_submit_button" onclick="addItem();">
-							<i class="fa-regular fa-envelope fa-2xl"></i>
-						</button>
-					
-					</div>
-				</form>
+			<div class="hero-image">
+				<div class="image-border">
+					<img src="assets/about-me-img.jpeg" alt="Miquéias Pereira">
+				</div>
 			</div>
-		</div>
-		
-		<div id="footer_copyright">
-			&#169
-			2024 all rights reserved
-		</div>
-    </footer>
+		</section>
 
-    
+		<section id="about" class="grid-section">
+			<div class="section-header">
+				<h2 class="number-title"><span>01.</span> Sobre Mim</h2>
+				<div class="line"></div>
+			</div>
+
+			<div class="about-grid">
+				<div class="about-bio">
+					<p>
+						Muito prazer! Sou o Miquéias (também conhecido como Micas ou Mick), amigos e família me chamam assim.
+						Original de <span class="highlight">São Luís</span>, a famosa Ilha do Amor, a capital do estdado do <span class="highlight">Maranhão</span>, cidade de poetas, já diriam as Palmeiras onde cantam os sabiás.
+					</p>
+					<br>
+					<p>
+						Minha rotina é bem diferenciada, trabalho em modelo hibrido, alguns dias em casa, outros dias no escritório. Todos os dias auxilio a minha família, que é um dos meus bens mais preciosos.
+					</p>
+					<br>
+					<p>
+						Sou amante de uma boa música, e separo meu tempo para praticar guitarra, além de ser aficcionado por esportes.
+						Trabalho como resolvedor de problemas profissional, desenvolvendo, criando, reestruturando soluções, sejam das mais simples até mais complexas que possam aparecer no meu ambiente de trabalho.
+						Estou sempre disposto a encarar novos desafios e me divirto enquanto aprendo, sempre mantendo a curiosidade de uma criança, com o rigor técnico de acadêmico.
+					</p>
+					<br>
+					<p>
+						Constantemente estudando algo novo, aprendendo um novo conceito, seja no trabalho ou em estudos particulares. Gosto de estar criando novos projetos e já tenho alguns em produção
+					</p>
+
+					<!-- <ul class="skills-list mono-text" style="list-style: none;">
+						<li><i class="fa-solid fa-caret-right"></i> HTML/CSS Puro</li>
+						<li><i class="fa-solid fa-caret-right"></i> Engenharia</li>
+						<li><i class="fa-solid fa-caret-right"></i> Guitarra Elétrica</li>
+						<li><i class="fa-solid fa-caret-right"></i> Natação</li>
+					</ul> -->
+				</div>
+
+				<div class="about-info-box">
+					<div class="info-card">
+						<i class="fa-solid fa-microchip"></i>
+						<h3>Stacks Principais</h3>
+						<ul class="skills-list mono-text" style="list-style: none;">
+							<li><i class="fa-solid fa-caret-right"></i> Php 5.3 a 8</li>
+							<li><i class="fa-solid fa-caret-right"></i> Python </li>
+							<li><i class="fa-solid fa-caret-right"></i> HTML/CSS Puro</li>
+							<li><i class="fa-solid fa-caret-right"></i> JavaScript/TypeScript </li>
+							<li><i class="fa-solid fa-caret-right"></i> C/C++</li>
+							<li><i class="fa-solid fa-caret-right"></i> SQL Server/MySql/ Postgres</li>
+						</ul>
+					</div>
+					<!-- <div class="info-card">
+						<i class="fa-solid fa-bolt"></i>
+						<h3>Esportes</h3>
+						<p>Futebol</p>
+						<p>Vôlei</p>
+						<p>Natação</p>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="contact"></footer>
+	<script src="/js/components/footer.js"></script>
 </body>
+
 </html>

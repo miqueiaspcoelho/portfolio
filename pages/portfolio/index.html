@@ -3,141 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Se tiver um arquivo CSS externo -->
-    <link rel="stylesheet" href="../../styles/footer_style.css"><!-- Adiciona o estilo ao footer-->
-	<link rel="stylesheet" href="../../styles/navbar_style.css"><!-- Adiciona o estilo ao menu(navbar)-->	
-	<link rel="stylesheet" href="../../assets/css/all.min.css"> <!-- Para utilizar fontawesome offiline -->
-	<link rel="stylesheet" href="../../assets/css/fontawesome.min.css"> <!-- Para utilizar fontawesome offiline -->
-	<script src="../../scripts/adiciona_mensagens.js"></script>
+    <title>Portfólio | Miquéias Pereira</title>
+    
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="../../scripts/adiciona_mensagens.js" defer></script>
 </head>
-<body>
-    <header>
-        <!-- Cabeçalho da página -->
-		 <!-- Navegação da página -->
-		 <nav class="nav-bar">
-			<div class="nav-list">
-				<ul>
-					<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
-					<li class="nav-item"><a href="#footer_contacts" class="nav-link">Contato</a></li>
-					<li class="nav-item"><a href="index.html" class="nav-link">Portfólio</a></li>
-					<li class="nav-item"><a href="../formacao/index.html" class="nav-link">Formação</a></li>
-					<li class="nav-item"><a href="../mensagens/index.html" class="nav-link">Mensagens</a></li>
-				</ul>
-			</div>
-		</nav>
+<body class="dark-theme">
+
+    <header class="header">
+        <!-- <nav class="container nav-container">
+            <div class="logo">
+                <span class="code-bracket">&lt;</span>Micas<span class="code-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="index.html" class="active">Portfólio</a></li>
+                <li><a href="../formacao/index.html">Formação</a></li>
+            </ul>
+        </nav> -->
     </header>
+    <script src="../../js/components/navbar.js"></script>
 
-	
+    <main class="container">
+        <section class="grid-section">
+            <div class="section-header">
+                <h2 class="number-title"><span>02.</span> Projetos_Destaque</h2>
+                <div class="line"></div>
+            </div>
 
-    <main>
-        <!-- Conteúdo principal da página -->
-		<article id="container_infos_card">
-			<section id="row1">
-				<div class="card-container">
-                    <a href="https://github.com/miqueiaspcoelho/Compilador" target="_blank"><img src="../../assets/java.png"></a>
-					<div class="card-content">
-						<h3>Compilador</h3>
-						<p class="bold">Tecnologias</p>
-                        <ul>
-                            <li><a href="../tecnologia_java/index.html">Java</a></li>
+            <div class="portfolio-grid">
+                
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-code-branch color-accent"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/miqueiaspcoelho/Compilador" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Compilador Jack</h3>
+                        <p class="project-description">Desenvolvimento de um compilador robusto para a linguagem Jack, focado em lógica de baixo nível e arquitetura de computadores.</p>
+                        <ul class="project-tech mono-text">
+                            <li>Java</li>
+                            <li>Compiladores</li>
                         </ul>
-						<p>Consiste em um compilador para linguagem jack</p>
-						
-					</div>
-				</div>
-                <div class="card-container">
-                    <a href="https://github.com/miqueiaspcoelho/ScoreBotDiscord2.0" target="_blank"><img src="../../assets/js.png"></a>
-					<div class="card-content">
-						<h3>ScoreBotDiscord2.0</h3>
-						<p class="bold">Tecnologias</p>
-                        <ul>
-                            <li><a href="../tecnologia_javascript/index.html">JavaScript</a></li>
-                        </ul>
-						<p>Bot para discord desenvolvido para contabilizar placar de jogos</p>
-						
-					</div>
-				</div>
-				
-			</section>
-			<section id="row2">
-				<div class="card-container">
-                    <a href="https://github.com/miqueiaspcoelho/Chamados" target="_blank"><img src="../../assets/python.png"></a>
-					<div class="card-content">
-						<h3>Chamados</h3>
-						<p class="bold">Tecnologias</p>
-                        <ul>
-                            <li><a href="../tecnologia_python/index.html">Python</a></li>
-                            <li><a href="../tecnologia_sqlite3/index.html">Sqlite3</a></li>
-                        </ul>
-						<p>Software desenvolvido com o objetivo registrar atendimentos realizados pelo setor de T.I</p>
-						
-					</div>
-				</div>
-                <div class="card-container">
-                    <a href="https://github.com/miqueiaspcoelho/jornadadev" target="_blank"><img src="../../assets/react.png"></a>
-					<div class="card-content">
-						<h3>JornadaDev</h3>
-						<p class="bold">Tecnologias</p>
-                        <ul>
-                            <li><a href="../tecnologia_react/index.html">React</a></li>
-                            <li><a href="../tecnologia_firebase/index.html">Firebase</a></li>
-                        </ul>
-						<p>Clone do App TikTok, desenvolvido na jornada full stack EBAC</p>
-						
-					</div>
-				</div>
+                    </div>
+                </article>
 
-			</section>
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-robot color-accent"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/miqueiaspcoelho/ScoreBotDiscord2.0" target="_blank"><i class="fa-brands fa-github main-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">ScoreBot Discord 2.0</h3>
+                        <p class="project-description">Automação para servidores de games. Bot desenvolvido para contabilizar placares e gerenciar rankings em tempo real.</p>
+                        <ul class="project-tech mono-text">
+                            <li>JavaScript</li>
+                            <li>Discord.js</li>
+                        </ul>
+                    </div>
+                </article>
 
-		</article>
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-database color-accent"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/miqueiaspcoelho/Chamados/releases/tag/ReleaseV.2.0.1" target="_blank"><i class="fa-brands fa-github main-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Sistema de Chamados</h3>
+                        <p class="project-description">Software para gestão de atendimentos de T.I., focado em organização de tickets e persistência de dados local.</p>
+                        <ul class="project-tech mono-text">
+                            <li>Python</li>
+                            <li>Sqlite3</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-mobile-screen color-accent"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/miqueiaspcoelho/jornadadev" target="_blank"><i class="fa-brands fa-github main-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">JornadaDev (TikTok Clone)</h3>
+                        <p class="project-description">Experimento Full Stack replicando funcionalidades de scroll infinito e integração com banco de dados em nuvem.</p>
+                        <ul class="project-tech mono-text">
+                            <li>React</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-microchip color-accent"></i>
+                            <div class="project-links">
+                                <a href="https://geradorcurriculos.netlify.app/" target="_blank"><i class="fa-solid fa-link main-link"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Gerador de Currículos (Gratuito)</h3>
+                        <p class="project-description">Site para geração e download de currículo de maneira gratuita. Sistema em funcionamento. Geração é feita em tempo de execução, sem persistência de dados do usuário</p>
+                        <ul class="project-tech mono-text">
+                            <li>HTMl/CSS/JS</li>
+                            <li>Python (Flask)</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
     </main>
 
-    <footer>
-       <!-- Rodapé da página -->
-		<div id="footer_content">
-			<div id="footer_contacts">
-				<h2>Redes Sociais</h1>
-				<p>Vamos trocar uma ideia! É só me seguir ou mandar uma dm</p>
-				<div id="footer_social_media">
-					<a href="https://www.linkedin.com/in/miqu%C3%A9ias-pereira-coelho-8a0071218/" target="_blank" class="footer_link" id="linkedin">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-					
-					<a href="https://www.instagram.com/mi.queias/" target="_blank" class="footer_link" id="instagram">
-						<i class="fa-brands fa-instagram"></i>
-						
-					</a>
-					
-					<a href="https://github.com/miqueiaspcoelho" target="_blank" class="footer_link" id="github">
-						<i class="fa-brands fa-github"></i>
-					</a>
-					
-				</div>
-			</div>
-			<div id="footer_email">
-				<h2>Contato por Email</h2>
-				<p>Adicione seu email e agende uma consultória tecnológica</p>
-				<form>
-					<div id="input_group">
-					
-						<input type="email" id="email_icon" placeholder="Digite seu email" required/>
-						<button type="submit" id="email_submit_button" onclick="addItem();">
-							<i class="fa-regular fa-envelope fa-2xl"></i>
-						</button>
-					
-					</div>
-				</form>
-			</div>
-		</div>
-		
-		<div id="footer_copyright">
-			&#169
-			2024 all rights reserved
-		</div>
-    </footer>
+    <footer id="contact"></footer>
+    <script src="../../js/components/footer.js"></script>
 
-   
 </body>
 </html>
